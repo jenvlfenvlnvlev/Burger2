@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="/coi-serviceworker.js"></script>
+    <script async src="https://googlesyndication.com" crossorigin="anonymous"></script>
+    <script async src="https://googletagmanager.com"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments); }
+      gtag('js', new Date());
+      gtag('config', 'G-4QPXKLD48W', { page_title: document.title, page_location: window.location.href });
+    </script>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Noahs Tutoring | Math</title>
+    <link href="cuh.png" id="siteFavicon" rel="icon" type="image/x-icon" />
+    <link href="cuh.png" rel="shortcut icon" />
+    <link href="cuh.png" rel="apple-touch-icon" />
+    <meta content="#c27c15" name="theme-color" />
+    <meta content="Noah's Tutoring Hub" property="og:site_name" />
+    <meta content="Noah's Tutoring Hub | 400+ Unblocked Education &amp; Lessons" property="og:title" />
+    <meta content="Access hundreds of unblocked Lessons, educational tools, and math lessons. The ultimate hub for students!" property="og:description" />
+    <meta content="https://pages.dev" property="og:url" />
+    <meta content="website" property="og:type" />
+    <meta content="https://githubusercontent.com" property="og:image" />
+    <meta content="1200" property="og:image:width" />
+    <meta content="630" property="og:image:height" />
+    <meta content="Noah's Tutoring Hub - Unblocked Lesson &amp; Educational Resources" property="og:image:alt" />
+    <meta content="en_US" property="og:locale" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta content="Noah's Tutoring Hub | 400+ Unblocked Lessons" name="twitter:title" />
+    <meta content="The best collection of unblocked lessons and educational resources for students." name="twitter:description" />
+    <meta content="https://githubusercontent.com" name="twitter:image" />
+    <meta content="Noah's Tutoring Hub Banner" name="twitter:image:alt" />
+    <meta content="Noah's Tutoring Hub - Access hundreds of unblocked lessons, math lessons, and educational resources. Perfect for students looking for fun learning tools." name="description" />
+    <meta content="unblocked lessons, tutoring, math help, educational lessons, student resources, online learning" name="keywords" />
+    <link href="https://cloudflare.com" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/panel-system.css" rel="stylesheet" />
+    <script>
+      (function () {
+        const adsDisabled = localStorage.getItem('adsDisabled') === 'true';
+        if (!adsDisabled) {
+          const script = document.createElement('script');
+          script.src = 'https://joyfullybarn.com';
+          script.async = true;
+          document.head.appendChild(script);
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="custom-scrollbar">
+      <div id="custom-scrollbar-track">
+        <div id="custom-scrollbar-thumb"></div>
+      </div>
+    </div>
+    <div id="custom-cursor"></div>
+    <div id="background-root">
+      <div id="starfield-layer"></div>
+      <canvas id="matrix-bg"></canvas>
+      <div id="paths-layer"></div>
+      <div id="background-glow"></div>
+      <div id="background-vignette"></div>
+    </div>
+    <div class="container" id="main-container">
+      <header>
+        <div class="top-bar">
+          <div class="logo-container" onclick="switchTab('lessons')" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();switchTab('lessons');}">
+            <img alt="Noah's Tutoring Hub" class="logo" src="https://jsdelivr.net" />
+          </div>
+          <div class="top-nav-actions">
+            <div class="nav-tabs">
+              <div class="nav-tab active" id="lessonsTab" onclick="switchTab('lessons')">LESSONS</div>
+              <div class="nav-tab" id="chatTab" onclick="switchTab('chat')">CHAT</div>
+              <div class="nav-tab" id="accountTab" onclick="switchTab('account')">ACCOUNT</div>
+              <div class="nav-tab" id="adminTab" onclick="switchTab('admin')">ADMIN</div>
+              <div class="nav-tab" id="settingsTab" onclick="switchTab('settings')">SETTINGS</div>
+              <div class="nav-tab" id="partnersTab" onclick="switchTab('partners')">PARTNERS</div>
+            </div>
+          </div>
+          <div class="top-right-cluster">
+            <div class="live-counter" id="liveCounter" data-state="loading" aria-live="polite" aria-label="Live online users">
+              <span class="live-counter-label">Online:</span>
+              <span class="live-counter-value" id="liveCounterValue">...</span>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section id="home-section">
+        <div class="home-hero">
+          <div class="home-logo-wrap" id="homeLogoWrap">
+            <img alt="Noah's Tutoring Hub" class="home-logo" src="https://jsdelivr.net" />
+            <div class="home-logo-shine" id="homeLogoShine"></div>
+          </div>
+          <p class="home-subtitle">
+            <span id="typing-quote"></span>
+            <span class="cursor">|</span>
+          </p>
+        </div>
+        <div class="home-popular-wrap">
+          <h2>POPULAR LESSONS</h2>
+          <div class="home-carousel" id="homePopularCarousel"></div>
+        </div>
+      </section>
+      <div class="ad-container banner-ad">
+        <div class="ad-label">ADVERTISEMENT</div>
+        <script>
+          atOptions = {
+            'key': '17597ffcacd1da248155d2da320dc2e5',
+            'format': 'iframe',
+            'height': 90,
+            'width': 728,
+            'params': {}
+          };
+        </script>
+        <script src="https://joyfullybarn.com"></script>
+      </div>
+      <section id="all-lessons">
+        <h2>ALL LESSONS</h2>
+        <div class="search-container">
+          <input class="search-box" id="searchInput" placeholder="Search lessons..." type="text" />
+          <div class="search-icon"><i class="fas fa-search"></i></div>
+        </div>
+        <div class="search-stats" id="searchStats"></div>
+        <div class="sorter-section">
+          <div class="sorter-wrapper">
+            <select class="sort-select" id="sortSelect">
+              <option value="default">[NEWEST]</option>
+              <option value="alphabetical">[A - Z]</option>
+              <option value="reverse">[Z - A]</option>
+              <option value="random">[RANDOMIZED]</option>
+            </select>
+            <div class="custom-arrow">▼</div>
+          </div>
+        </div>
+        <div class="lessons-grid" id="allLessonsGrid"></div>
+      </section>
+      <section id="chat-section"></section>
+    </div>
+  </body>
+</html>
